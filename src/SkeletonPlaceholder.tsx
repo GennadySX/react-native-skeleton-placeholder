@@ -1,5 +1,6 @@
 import * as React from "react";
 import {
+  Animated,
   View,
   StyleSheet,
   Easing,
@@ -7,9 +8,8 @@ import {
   Dimensions,
   LayoutRectangle,
 } from "react-native";
-import MaskedView from "@react-native-community/masked-view";
+import MaskedView from "@react-native-masked-view/masked-view";
 import LinearGradient from "react-native-linear-gradient";
-import Animated from 'react-native-reanimated';
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 

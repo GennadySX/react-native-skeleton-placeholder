@@ -1,6 +1,6 @@
 {
   "name": "@gennadysx/react-native-skeleton-placeholder",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "SkeletonPlaceholder is a React Native library to easily create an amazing loading effect.",
   "main": "lib/SkeletonPlaceholder.js",
   "scripts": {
@@ -21,19 +21,17 @@
   "author": "Henrique Ramos <chenrique.ramos12@gmail.com> (https://github.com/chramos) | GennadySX <the@gennadysx.com>",
   "license": "ISC",
   "devDependencies": {
-    "@react-native-community/masked-view": "^0.2.6",
+    "@react-native-masked-view/masked-view": "^0.2.6",
     "@types/prop-types": "^15.7.3",
-    "react-native-reanimated": "^2.3.0-beta.4",
     "@types/react": "^17.0.27",
     "@types/react-native": "^0.65.5",
     "react-native-linear-gradient": "^2.5.6",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {
-    "@react-native-community/masked-view": "^0.2.6",
+    "@react-native-masked-view/masked-view": "^0.2.6",
     "react": ">=0.17.0.1",
     "react-native": ">=0.65.20",
-    "react-native-linear-gradient": "^2.5.6",
-    "react-native-reanimated": "^2.3.0-beta.4"
+    "react-native-linear-gradient": "^2.5.6"
   }
 }
