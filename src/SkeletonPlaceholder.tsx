@@ -94,12 +94,9 @@ interface SkeletonPlaceholderProps {
         element,
         (child: JSX.Element, index: number) => {
           let style: ViewStyle;
-          if (child.type.displayName === "SkeletonPlaceholderItem") {
             const { children, ...styles } = child.props;
             style = styles;
-          } else {
-            style = child.props.style;
-          }
+
           if (child.props.children) {
             return (
               <View key={index} style={style}>
@@ -184,16 +181,6 @@ const SkeletonItem = ({
 }: SkeletonPlaceholderItem): JSX.Element => (
   <View style={style}>{children}</View>
 );
-
-
-const styles = StyleSheet.create({
-  childContainer: {
-    position: "relative",
-  },
-  gradient: {
-    flex: 1,
-  },
-});
 
 
 
