@@ -178,7 +178,7 @@ interface SkeletonPlaceholderItem extends ViewStyle {
   children?: JSX.Element | JSX.Element[];
 }
 
-const Item = ({
+const SkeletonItem = ({
   children,
   ...style
 }: SkeletonPlaceholderItem): JSX.Element => (
@@ -199,5 +199,5 @@ const styles = StyleSheet.create({
 
 export  {
     SkeletonHolder,
-    Item
+    SkeletonItem
 }

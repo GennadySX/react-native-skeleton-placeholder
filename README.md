@@ -61,24 +61,24 @@ with **SkeletonPlacehoder.Item** 🆕
 ```javascript
 import React from "react";
 import { View } from "react-native";
-import SkeletonPlaceholder from "@gennadysx/react-native-skeleton-placeholder";
+import {Skeletonholder, SkeletonItem} from "@gennadysx/react-native-skeleton-placeholder";
 
 const App = () => {
   return (
-    <SkeletonPlaceholder>
-      <SkeletonPlaceholder.Item flexDirection="row" alignItems="center">
-        <SkeletonPlaceholder.Item width={60} height={60} borderRadius={50} />
-        <SkeletonPlaceholder.Item marginLeft={20}>
-          <SkeletonPlaceholder.Item width={120} height={20} borderRadius={4} />
-          <SkeletonPlaceholder.Item
+    <SkeletonHolder>
+      <SkeletonItem flexDirection="row" alignItems="center">
+        <SkeletonItem width={60} height={60} borderRadius={50} />
+        <SkeletonItem marginLeft={20}>
+          <SkeletonItem width={120} height={20} borderRadius={4} />
+          <SkeletonItem
             marginTop={6}
             width={80}
             height={20}
             borderRadius={4}
           />
-        </SkeletonPlaceholder.Item>
-      </SkeletonPlaceholder.Item>
-    </SkeletonPlaceholder>
+        </SkeletonItem>
+      </SkeletonItem>
+    </SkeletonHolder>
   );
 };
 ```
@@ -88,11 +88,11 @@ or with **View**
 ```javascript
 import React from "react";
 import { View } from "react-native";
-import SkeletonPlaceholder from "@gennadysx/react-native-skeleton-placeholder";
+import {Skeletonholder, SkeletonItem} from "@gennadysx/react-native-skeleton-placeholder";
 
 const App = () => {
   return (
-    <SkeletonPlaceholder>
+    <SkeletonHolder>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <View style={{ width: 60, height: 60, borderRadius: 50 }} />
         <View style={{ marginLeft: 20 }}>
@@ -102,7 +102,7 @@ const App = () => {
           />
         </View>
       </View>
-    </SkeletonPlaceholder>
+    </SkeletonHolder>
   );
 };
 ```
