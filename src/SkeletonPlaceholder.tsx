@@ -40,7 +40,7 @@ interface SkeletonPlaceholderProps {
   direction?: "left" | "right";
 }
 
-export default function SkeletonPlaceholder({
+ function SkeletonHolder({
   children,
   backgroundColor = "#E1E9EE",
   speed = 800,
@@ -178,15 +178,13 @@ interface SkeletonPlaceholderItem extends ViewStyle {
   children?: JSX.Element | JSX.Element[];
 }
 
-SkeletonPlaceholder.Item = ({
+const Item = ({
   children,
   ...style
 }: SkeletonPlaceholderItem): JSX.Element => (
   <View style={style}>{children}</View>
 );
 
-//@ts-ignore
-SkeletonPlaceholder.Item.displayName = "SkeletonPlaceholderItem";
 
 const styles = StyleSheet.create({
   childContainer: {
@@ -196,3 +194,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+
+
+export  {
+    SkeletonHolder,
+    Item
+}

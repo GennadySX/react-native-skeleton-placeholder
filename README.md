@@ -43,13 +43,13 @@ pod install
 Using yarn:
 
 ```bash
-yarn add react-native-skeleton-placeholder
+yarn add @gennadysx/react-native-skeleton-placeholder
 ```
 
 Using npm:
 
 ```bash
-npm install react-native-skeleton-placeholder --save
+npm install @gennadysx/react-native-skeleton-placeholder --save
 ```
 
 ### Usage
@@ -61,7 +61,7 @@ with **SkeletonPlacehoder.Item** 🆕
 ```javascript
 import React from "react";
 import { View } from "react-native";
-import SkeletonPlaceholder from "react-native-skeleton-placeholder";
+import SkeletonPlaceholder from "@gennadysx/react-native-skeleton-placeholder";
 
 const App = () => {
   return (
@@ -88,7 +88,7 @@ or with **View**
 ```javascript
 import React from "react";
 import { View } from "react-native";
-import SkeletonPlaceholder from "react-native-skeleton-placeholder";
+import SkeletonPlaceholder from "@gennadysx/react-native-skeleton-placeholder";
 
 const App = () => {
   return (
