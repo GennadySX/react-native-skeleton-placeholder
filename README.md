@@ -88,7 +88,7 @@ or with **View**
 ```javascript
 import React from "react";
 import { View } from "react-native";
-import {Skeletonholder, SkeletonItem} from "@gennadysx/react-native-skeleton-placeholder";
+import {SkeletonHolder, SkeletonItem} from "@gennadysx/react-native-skeleton-placeholder";
 
 const App = () => {
   return (
